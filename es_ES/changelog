@@ -1,0 +1,115 @@
+
+wps-office-dictionaries
+  * Renombrado de "es_ES.dic" a "main.dic"
+  * Renombrado de "es_ES.aff" a "main.aff"
+  * Creación del archivo "dict.conf" y su contenido
+
+ -- Washington Indacochea Delgado <wachin.id@gmail.com>  Sábado, 13 Abril 2019
+
+libreoffice-dictionaries (1:6.0.3-3) unstable; urgency=medium
+
+  * [c284471] Bump Breaks+Replaces on hunspell-hr to cover for the version
+    used in Ubuntu.  LP: #1764730
+
+ -- Mattia Rizzolo <mattia@debian.org>  Tue, 17 Apr 2018 17:32:15 +0200
+
+libreoffice-dictionaries (1:6.0.3-2) unstable; urgency=medium
+
+  * hlper.py:
+    + [abf0b86] Add support for the new sq_AL (aka 'sq', aka Albanian) dicts.
+    + [0739d3a] Properly blacklist hunspell-sq, instead of myspell-sq.
+  * list.json:
+    + [a43ac2a] Update for the new Albanian dicts.
+    + [8ff8e8d] Also remove the special-cased en-au and en-ca from here.
+  * [f4b00cd] Take over the myspell-hr binary, and make it a transitional
+    package to our hunspell-hr.
+  * [35a5c42] Take over the hyphen-hr binary package.  Closes: #768278
+  * [d471070] Update d/copyright.
+  * [022a033] Bump Standards-Version to 4.1.4, no changes needed.
+  * [ee43ede] Bump debhelper compat version to 11.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Tue, 10 Apr 2018 15:19:33 +0200
+
+libreoffice-dictionaries (1:6.0.3-1) unstable; urgency=medium
+
+  * [719bc8b] New upstream version 6.0.3
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 02 Apr 2018 15:03:11 +0000
+
+libreoffice-dictionaries (1:6.0.0~rc1-1) unstable; urgency=medium
+
+  * [baa3354] New upstream version 6.0.0~rc1
+  * [9c35199] update Vcs-* to salsa
+  * [95160dd] blacklist hunspell-nl, now supposed to be built by dutch
+  * [b2e7827] remove obsolete debian/patches/iceanimals; the "iceanimals"
+    are gone
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 07 Jan 2018 19:45:27 +0100
+
+libreoffice-dictionaries (1:5.4.3-1) unstable; urgency=medium
+
+  * [ac6b656] New upstream version 5.4.3
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 05 Nov 2017 11:43:14 +0000
+
+libreoffice-dictionaries (1:5.4.2-2) unstable; urgency=medium
+
+  * [9c24bca] stop building hunspell-en-{au,ca}, now built by scowl
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 21 Oct 2017 00:01:07 +0200
+
+libreoffice-dictionaries (1:5.4.2-1) unstable; urgency=medium
+
+  [ Rene Engelhard ]
+  * [9673226] New upstream version 5.4.2
+  * [b33a631] new package: hunspell-gug
+  * [d19c21b] apparently slovnik_data_utf8.txt is gone;
+    update ./dictionary-to-thesaurus.py call
+  * [c87b6bc] fix gug thesaurus install
+  * [43ba2a7] update debian/copyright for hr_HR
+  * [29a0e75] Standards-Version: 4.0.0, remove extra MPL-* paragraph from
+    debian/copyright, now in common-licenses
+
+  [ Mattia Rizzolo ]
+  * [192eda2] Remove transitional myspell-* packages. (Closes: #872706)
+  * [b71ab9e] helper.py: add support mapping for 'bo' (Standard Tibetan).
+  * [043b4bc] helper.py: blacklist building of the new hunspell-bo, already
+    built by src:hunspell-bo
+  * [85a6942] helper.py: gd files have been moved to the language root, drop
+    special casing.
+  * [765d81b] Remove very old lintian overrides concerning only old
+    openoffice.org-dictionaries
+  * [3f51805] Override testsuite-autopkgtest-missing lintian tag.
+  * [7d3f3cd] d/control: Bump Standards-Version to 4.1.1, no changes needed.
+  * [30463dd] d/control: fix capitalization of 'Python'
+  * [264c5e8] d/watch: Use HTTPS.
+  * [d11a9fa] d/rules: temporary ugliness to fix permissions of some files.
+  * [355d3dc,eaab096] Update copyright.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Sun, 15 Oct 2017 20:25:31 +0200
+
+libreoffice-dictionaries (1:5.2.5-1) unstable; urgency=medium
+
+  * [4b0c8c2] New upstream version 5.2.5
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 26 Jan 2017 13:20:34 +0100
+
+libreoffice-dictionaries (1:5.2.4-1) unstable; urgency=medium
+
+  * [8b06a1d] New upstream version 5.2.4.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Thu, 12 Jan 2017 13:07:51 +0100
+
+libreoffice-dictionaries (1:5.2.3-1) unstable; urgency=medium
+
+  [ Rene Engelhard ]
+  * [3dceac5] Imported Upstream version 5.2.3
+
+  [ Mattia Rizzolo ]
+  * [af18d38,7fd2768] Add some more Multi-Arch:foreign markers to the
+    transitional packages.
+  * [1990c95] d/copyright: remove weird U+2028 char.
+
+ -- Mattia Rizzolo <mattia@debian.org>  Sun, 13 Nov 2016 16:07:30 +0000
+
+# For older changelog entries, run 'apt-get changelog hunspell-es'

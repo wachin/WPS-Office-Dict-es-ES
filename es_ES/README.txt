@@ -1,4 +1,3 @@
-# Diccionario-de-correccion-ortografica-Español-WPS-Office
 
 Cuando uno descarga el diccionario español España para WPS Office desde:
 
