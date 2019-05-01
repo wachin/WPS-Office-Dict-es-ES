@@ -9,3 +9,8 @@ no funciona para WPS Office 2019 por estar vacío el contenido de "main.dic"(que
 http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice-dictionaries/hunspell-es_6.0.3-3_all.deb 
 
 para que funcione como diccionario para WPS Office 2019, y al hacer esto si funciona
+
+Detalles del contacto: 
+
+Washington Indacochea Delgado
+wachin.id@gmail.com
