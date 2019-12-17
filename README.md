@@ -10,7 +10,20 @@ no funciona para WPS Office 2019 por estar vacío el contenido de "main.dic"(que
 
 http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice-dictionaries/hunspell-es_6.0.3-3_all.deb 
 
-para que funcione como diccionario para WPS Office 2019, y al hacer esto si funciona
+para que funcione como diccionario para WPS Office 2019
+
+lo que hice fue descargarlo y extraer su contendio y lo que necesitaba estaba aquí:
+
+usr/share/hunspell/es_ES.aff
+usr/share/hunspell/es_ES.dic
+
+y cree una carpeta llamada:
+
+es_ES
+
+y allí los pegué. Además pegué allí también el archivo "dict.conf" que lo saqué de la página original de los diccionarios de http://wps-community.org/download/dicts cuando estaban en línea
+
+y al hacer esto si funciona
 
 Detalles del contacto: 
 
